@@ -1,0 +1,480 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url('../fonts/Chomsky.otf');
+}
+
+@font-face {
+    font-family: 'Built';
+    src: url('../fonts/built titling rg.otf');
+}
+
+@font-face {
+    font-family: 'Ethereal';
+    src: url('../fonts/EtherealDemo-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Oriental';
+    src: url('../fonts/Oriental Village.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #f6f0df;
+
+    color: #111;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.8;
+}
+
+.topline {
+    height: 8px;
+    background: black;
+}
+
+header {
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.header-top {
+
+    font-family: Built;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+.site-title {
+
+    font-family: Chomsky;
+
+    font-size: clamp(4rem, 10vw, 8rem);
+
+    font-weight: normal;
+
+    line-height: 1;
+}
+
+.motto {
+
+    font-family: Built;
+
+    letter-spacing: 4px;
+
+    margin-top: 10px;
+}
+
+.issue-info {
+
+    margin-top: 10px;
+
+    color: #666;
+}
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 15px;
+
+    border-top: 2px solid black;
+
+    border-bottom: 2px solid black;
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: black;
+
+    font-family: Built;
+
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+
+    text-decoration: underline;
+}
+
+.ticker {
+
+    background: black;
+
+    color: white;
+
+    padding: 12px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+.ticker span {
+
+    display: inline-block;
+
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* HERO */
+
+.hero-new {
+
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+.edition-banner {
+
+    font-family: Built;
+
+    letter-spacing: 5px;
+
+    border-top: 2px solid black;
+
+    border-bottom: 2px solid black;
+
+    padding: 12px;
+
+    margin-bottom: 35px;
+}
+
+.hero-new img {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    display: block;
+
+    margin: auto;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.15);
+}
+
+.hero-new h2 {
+
+    font-family: Ethereal;
+
+    font-size: 2.2rem;
+
+    margin-top: 30px;
+}
+
+.hero-new p {
+
+    max-width: 700px;
+
+    margin: 20px auto;
+}
+
+.btn {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: black;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.btn:hover {
+
+    background: #333;
+}
+
+/* DIVIDER */
+
+.section-divider {
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    color: #777;
+
+    margin: 40px 0;
+}
+
+/* NEWS SECTION */
+
+.newspaper-sections {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 40px;
+
+    padding: 50px;
+
+    margin: 0 40px;
+
+    border-top: 2px solid black;
+
+    border-bottom: 2px solid black;
+}
+
+.news-column {
+
+    padding: 0 20px;
+
+    border-right: 1px solid #aaa;
+}
+
+.news-column:last-child {
+
+    border-right: none;
+}
+
+.section-heading {
+
+    font-family: Built;
+
+    font-size: 1.3rem;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 3px double black;
+
+    text-transform: uppercase;
+}
+
+.story {
+
+    margin-bottom: 35px;
+}
+
+.story h4 {
+
+    font-family: Ethereal;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 10px;
+}
+
+.story p {
+
+    color: #444;
+}
+
+/* ARCHIVE */
+
+.archive {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+.archive-title {
+
+    font-family: Chomsky;
+
+    font-size: 4rem;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.archive-subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 50px;
+}
+
+.timeline {
+
+    border-left: 4px solid black;
+
+    padding-left: 40px;
+}
+
+.year-block {
+
+    position: relative;
+
+    margin-bottom: 50px;
+}
+
+.year-block::before {
+
+    content: "";
+
+    width: 16px;
+
+    height: 16px;
+
+    background: black;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: -48px;
+
+    top: 10px;
+}
+
+.year-block h3 {
+
+    font-family: Ethereal;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.year-block a {
+
+    display: block;
+
+    text-decoration: none;
+
+    color: black;
+
+    padding: 8px 0;
+
+    transition: .3s;
+}
+
+.year-block a:hover {
+
+    padding-left: 10px;
+
+    color: #7b0000;
+}
+
+button {
+
+    display: block;
+
+    margin: 40px auto 0;
+
+    background: black;
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #333;
+}
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px;
+
+    border-top: 2px solid black;
+
+    margin-top: 40px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    nav {
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+    .newspaper-sections {
+
+        grid-template-columns: 1fr;
+
+        margin: 20px;
+
+        padding: 25px;
+    }
+
+    .news-column {
+
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+
+        padding-bottom: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .timeline {
+
+        padding-left: 20px;
+    }
+
+    .year-block::before {
+
+        left: -28px;
+    }
+
+    .archive-title {
+
+        font-size: 3rem;
+    }
+}
